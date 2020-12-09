@@ -10,3 +10,13 @@ homepage:
     defaults:
         template: default/homepage.html.twig
         _locale: '%locale%'
+
+controllers:
+    resource: '../src/Controller/'
+    type:     annotation
+    prefix:   /
+    trailing_slash_on_root: false
+
+task_success:
+    path: /success
+    controller: App\Controller\TaskController::success
